@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "monkeys_paw",
+	"version": "${version}",
+	"name": "Monkey's Paw",
+	"description": "Adds Monkey's Paw. Remember, everything has consequences",
+	"authors": [
+		"Masik16u"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/monkeys-paw"
+	},
+	"license": "GNU General Public License v3.0",
+	"icon": "assets/monkeys_paw/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.masik.monkeyspaw.MonkeysPaw"
+		],
+		"fabric-datagen": [
+			"net.masik.monkeyspaw.MonkeysPawDataGenerator"
+		]
+	},
+	"accessWidener": "monkeys_paw.accesswidener",
+	"mixins": [
+		"monkeys_paw.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
